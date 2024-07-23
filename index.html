@@ -9,16 +9,38 @@
   <body>
     <header class="header">
       <div class="full-header">
-        <a href="#">TBC კონცეპტი</a>
+        <a href="#">
+          <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
+        </a>
         <nav class="nav">
-          <a href="#">პროდუქტები</a>
-          <a href="#">შეთავაზებები</a>
-          <a href="#">კონცეპტის სივრცე</a>
+          <div class="nav-list dropdown">პროდუქტები</div>
+          <div class="nav-list dropdown">შეთავაზებები</div>
+          <div class="nav-list dropdown">კონცეპტის სივრცე</div>
         </nav>
         <div class="header-btn">
-          <div>dzebna icon</div>
-          <div>-> gamoiweret nakrebi</div>
-          <div>qar/eng</div>
+          <a href="#" class="search">
+            <img src="images/magnifying-glass-solid.svg" alt="search" />
+          </a>
+          <a href="#" class="link-arrow">
+            <img
+              class="arrow-button"
+              src="images/arrow-right-solid.svg"
+              alt="arrowright"
+            />
+            გამოიწერეთ ნაკრები
+          </a>
+          <div class="lang">
+            <div class="lang-div">
+              <div class="contact-icon">
+                <img
+                  class="globe-icon"
+                  src="images/globe-solid.svg"
+                  alt="lang"
+                />
+              </div>
+              <div class="lang-text">ქარ</div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -71,25 +93,45 @@
               <h3>cifruli</h3>
               <div>asdasdasdad</div>
             </div>
-            <div class="card-image"><img src="images/select-set1.png"></div>
+            <div class="card-image"><img src="images/select-set1.png" /></div>
           </div>
           <div class="card card-long">
             <div class="card-content">
               <h3>360</h3>
               <div>asdasdasdad</div>
             </div>
-            <div class="card-image"><img src="images/select-set3.png"></div>
+            <div class="card-image"><img src="images/select-set3.png" /></div>
           </div>
           <div class="card">
             <div class="card-content">
               <h3>ragaca</h3>
               <div>asdasdasdad</div>
             </div>
-            <div class="card-image"><img src="images/select-set2.png"></div>
+            <div class="card-image"><img src="images/select-set2.png" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="numbers">
+        <div class="numbers-div">
+          <div class="numbers_item">
+            <div class="numbers-num">94 750</div>
+            <p>მომხმარებელი</p>
+          </div>
+          <div class="numbers_item">
+            <div class="numbers-num">150+</div>
+            <p>ღონისძიება</p>
+          </div>
+          <div class="numbers_item">
+            <div class="numbers-num">130+</div>
+            <p>შეთავაზება</p>
           </div>
         </div>
       </section>
       <section class="offers-section">
+        <div class="offers-title">
+          <h2>შეთავაზებები</h2>
+          <a href="#" class="link-arrow hover-skyblue">-> yvela shetavazeba</a>
+        </div>
         <button class="slide-button left" id="slide-left">&lt;</button>
         <div class="offers-slider" id="offers-slider">
           <div class="offers-track" id="offers-track">
@@ -112,61 +154,183 @@
         </div>
         <button class="slide-button right" id="slide-right">&gt;</button>
       </section>
-      <section class="offers">
-        შეთავაზებები
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
-      </section>
       <section class="mobile-bank">
-        ციფრული ბანკი
-        <div class="banki">
-          შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით
+        <div class="bank-div">
+          <div class="bank-content">
+            <h2>ციფრული ბანკი</h2>
+            <img class="bank-img" src="images/mobile-bank-img.png" />
+            <p>
+              შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის
+              დახმარებით
+            </p>
+            <div class="bank-apps">
+              <a class="app-btn" href=""
+                ><img src="images/google-play.svg"
+              /></a>
+              <a class="app-btn" href=""><img src="images/app-store.svg" /></a>
+            </div>
+          </div>
         </div>
-        <div class="banki">android button</div>
-        <div class="banki">apple button</div>
-        <div class="surati">surati</div>
       </section>
-      <section class="products">
-        პროდუქტები
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
+      <section class="offers-section">
+        <div class="offers-title">
+          <h2>პროდუქტები</h2>
+        </div>
+        <button class="slide-button left" id="slide-left">&lt;</button>
+        <div class="offers-slider" id="offers-slider">
+          <div class="offers-track" id="offers-track">
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 1" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 2" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 3" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 4" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 5" />
+            </div>
+          </div>
+        </div>
+        <button class="slide-button right" id="slide-right">&gt;</button>
       </section>
       <section class="tbc-concept">
-        <div class="image">
-          <div>თიბისი კონცეპტი</div>
-          <div>
-            პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და
-            ინტერესებზე
+        <div class="concept-banner">
+          <div class="concept-picture">
+            <img src="images/personal-bank.png" alt="Concept Image" />
           </div>
-          <button class="subscribe-btn">გამოიწერეთ -></button>
+          <div class="concept-content">
+            <div class="concept-text">
+              <h1>პირადი ბანკირი</h1>
+              <p>თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</p>
+              <a class="subscribe-btn">გაიგეთ მეტი</a>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="awards">
-        ჯილდოები
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
-        <div class="ragaceebi">charchoebi</div>
+      <section class="offers-section">
+        <div class="offers-title">
+          <h2>ჯილდოები</h2>
+          <a href="#" class="link-arrow">-> yvela shetavazeba</a>
+        </div>
+        <button class="slide-button left" id="slide-left">&lt;</button>
+        <div class="offers-slider" id="offers-slider">
+          <div class="offers-track" id="offers-track">
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 1" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 2" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 3" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 4" />
+            </div>
+            <div class="offer">
+              <img src="images/programming.png" alt="Offer 5" />
+            </div>
+          </div>
+        </div>
+        <button class="slide-button right" id="slide-right">&gt;</button>
       </section>
     </div>
     <footer class="footer">
-      <div class="nav">
-        <a href="#">TBC კონცეპტი</a>
-        <div class="links">
-          <a href="#">პროდუქტები</a>
-          <a href="#">შეთავაზებები</a>
-          <a href="#">კონცეპტის სივრცე</a>
+      <div class="footer-title">
+        <a href="#">
+          <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
+        </a>
+        <div class="lang">
+          <div class="lang-div">
+            <div class="contact-icon">
+              <img class="globe-icon" src="images/globe-solid.svg" alt="lang" />
+            </div>
+            <div class="lang-text">ქარ</div>
+          </div>
         </div>
-        <div class="links">
-          <a href="#">პროდუქტები</a>
-          <a href="#">შეთავაზებები</a>
-          <a href="#">კონცეპტის სივრცე</a>
+      </div>
+      <div class="footer-body">
+        <div class="footer-table">
+          <div class="footer-col">
+            <div class="column">
+              <div class="col-title">
+                <a href="#">პროდუქტები</a>
+              </div>
+              <div class="col-list">
+                <a class="hover-blue" href="#">ნაკრები</a>
+                <a class="hover-blue" href="#">პერსონალური ბანკირი</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="column">
+              <div class="col-title">
+                <a href="#">Lifestyle</a>
+              </div>
+              <div class="col-list">
+                <a class="hover-blue" href="#">შეთავაზებები</a>
+                <a class="hover-blue" href="#">ღონისძიებები</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="column">
+              <div class="col-title">
+                <a href="#">კონცეპტის სივრცე</a>
+              </div>
+              <div class="col-list">
+                <a class="hover-blue" href="#">ბიბლიოთეკა</a>
+                <a class="hover-blue" href="#">კაფე</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col contact">
+            <div class="column">
+              <div class="col-title">
+                <a href="#">დაგვიკავშირდით:</a>
+              </div>
+              <address class="col-list contact-info">
+                <a class="hover-underline" href="#">
+                  <div class="contact-icon">png</div>
+                  <p>+995 32 2 27 27 00</p>
+                </a>
+                <a class="hover-underline" href="#">
+                  <div class="contact-icon">png</div>
+                  <p>info@tbcconcept.ge</p>
+                </a>
+                <a class="hover-underline" href="#">
+                  <div class="contact-icon">png</div>
+                  <p>ფილიალები</p>
+                </a>
+              </address>
+              <p class="col-title">სოციალური ქსელები</p>
+              <div class="social-icons">
+                <a class="hover-blue" href="#">
+                  <div class="contact-icon">fb</div>
+                </a>
+                <a class="hover-blue" href="#">
+                  <div class="contact-icon">inst</div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="links">
-          <a href="#">პროდუქტები</a>
-          <a href="#">შეთავაზებები</a>
-          <a href="#">კონცეპტის სივრცე</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="bottom-content">
+          <div class="rights">
+            <div class="rights-logo">png</div>
+            <p>2024 ყველა უფლება დაცულია</p>
+          </div>
+          <div class="footer-links">
+            <span>კონფიდენციალურობა</span>
+            <span>წესები და პირობები</span>
+          </div>
         </div>
       </div>
     </footer>
