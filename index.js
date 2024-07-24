@@ -69,3 +69,58 @@ function setSliderPosition() {
   track.style.transform = `translateX(${currentTranslate}px)`;
   prevTranslate = currentTranslate;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const langToggle = document.getElementById("lang-toggle");
+  const langText = document.getElementById("lang-text");
+  const dropdownContent = document.getElementById("dropdown-lang");
+
+  langToggle.addEventListener("click", () => {
+    if (langText.textContent === "ქარ") {
+      langText.textContent = "Eng";
+      dropdownContent.innerHTML = '<div class="lang-item">ქარ</div>';
+    } else {
+      langText.textContent = "ქარ";
+      dropdownContent.innerHTML = '<div class="lang-item">Eng</div>';
+    }
+  });
+
+  dropdownContent.addEventListener("click", (event) => {
+    langText.textContent = event.target.textContent;
+    dropdownContent.innerHTML = `<div class="lang-item">${
+      langText.textContent === "Eng" ? "ქარ" : "Eng"
+    }</div>`;
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const navLists = document.querySelectorAll(".nav-list");
+  const backgroundDiv = document.querySelector(".background-div");
+
+  navLists.forEach((navList) => {
+    navList.addEventListener("click", () => {
+      const isActive = navList.classList.contains("active");
+      navLists.forEach((item) => {
+        item.classList.remove("active");
+        item.querySelector(".dropdown-content").style.display = "none";
+      });
+
+      if (!isActive) {
+        navList.classList.add("active");
+        navList.querySelector(".dropdown-content").style.display = "block";
+        backgroundDiv.style.opacity = "1";
+      } else {
+        backgroundDiv.style.opacity = "0";
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".nav")) {
+      navLists.forEach((item) => {
+        item.classList.remove("active");
+        item.querySelector(".dropdown-content").style.display = "none";
+      });
+      backgroundDiv.style.opacity = "0";
+    }
+  });
+});

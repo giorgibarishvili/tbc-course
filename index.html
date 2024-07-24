@@ -9,19 +9,58 @@
   <body>
     <header class="header">
       <div class="full-header">
+        <div class="background-div">
+          <a href="#" class="dropdown-img-a">
+            <div class="dropdown-image">
+              <img src="images/credit-cards.png" alt="Sample" />
+            </div>
+            <div class="link-arrow hover-skyblue">
+              <div>
+                <img
+                  style="display: flex"
+                  src="images/arrow-up-right-solid.svg"
+                  alt="arrow"
+                />
+              </div>
+              <div>ციფრული ბანკი</div>
+            </div>
+          </a>
+        </div>
         <a href="#">
           <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
         </a>
         <nav class="nav">
-          <div class="nav-list dropdown">პროდუქტები</div>
-          <div class="nav-list dropdown">შეთავაზებები</div>
-          <div class="nav-list dropdown">კონცეპტის სივრცე</div>
+          <div class="nav-list dropdown">
+            პროდუქტები
+            <div class="dropdown-content">
+              <div class="dropdown-item hover-blue">პროდუქტების მიმოხილვა</div>
+              <div class="dropdown-item hover-blue">ნაკრები</div>
+              <div class="dropdown-item hover-blue">პირადი ბანკირი</div>
+            </div>
+          </div>
+          <div class="nav-list dropdown">
+            შეთავაზებები
+            <div class="dropdown-content">
+              <div class="dropdown-item hover-blue">მიმოხილვა</div>
+              <div class="dropdown-item hover-blue">შეთავაზებები</div>
+              <div class="dropdown-item hover-blue">ღონისძიებები</div>
+            </div>
+          </div>
+          <div class="nav-list dropdown">
+            კონცეპტის სივრცე
+            <div class="dropdown-content">
+              <div class="dropdown-item hover-blue">მიმოხილვა</div>
+              <div class="dropdown-item hover-blue">კაფე</div>
+              <div class="dropdown-item hover-blue">ბიბლიოთეკა</div>
+              <div class="dropdown-item hover-blue">კონცეპტ ფილიალი</div>
+            </div>
+          </div>
         </nav>
         <div class="header-btn">
           <a href="#" class="search">
             <img src="images/magnifying-glass-solid.svg" alt="search" />
           </a>
-          <a href="#" class="link-arrow">
+          <a href="#" class="link-arrow hover-skyblue">
             <img
               class="arrow-button"
               src="images/arrow-right-solid.svg"
@@ -30,7 +69,7 @@
             გამოიწერეთ ნაკრები
           </a>
           <div class="lang">
-            <div class="lang-div">
+            <div class="lang-div" id="lang-toggle">
               <div class="contact-icon">
                 <img
                   class="globe-icon"
@@ -38,7 +77,10 @@
                   alt="lang"
                 />
               </div>
-              <div class="lang-text">ქარ</div>
+              <div class="lang-text" id="lang-text">ქარ</div>
+            </div>
+            <div class="dropdown-lang" id="dropdown-lang">
+              <div class="lang-item">Eng</div>
             </div>
           </div>
         </div>
@@ -62,21 +104,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="tbc-concept">
-        <div class="concept-banner">
-          <div class="concept-content">
-            <div class="concept-text">
-              <h1>თიბისი კონცეპტი</h1>
-              <p>
-                პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა
-                და ინტერესებზე
-              </p>
-              <button class="subscribe-btn">გამოიწერეთ -></button>
-            </div>
-            <div class="concept-picture"><img src="images/tbc-img1.png" /></div>
-          </div>
-        </div>
-      </section> -->
       <section class="subscribe-text">
         <p>
           გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე
@@ -130,7 +157,14 @@
       <section class="offers-section">
         <div class="offers-title">
           <h2>შეთავაზებები</h2>
-          <a href="#" class="link-arrow hover-skyblue">-> yvela shetavazeba</a>
+          <a href="#" class="link-arrow hover-skyblue"
+            ><img
+              class="arrow-button"
+              src="images/arrow-right-solid.svg"
+              alt="arrowright"
+            />
+            ყველა შეთავაზება</a
+          >
         </div>
         <button class="slide-button left" id="slide-left">&lt;</button>
         <div class="offers-slider" id="offers-slider">
@@ -215,7 +249,6 @@
       <section class="offers-section">
         <div class="offers-title">
           <h2>ჯილდოები</h2>
-          <a href="#" class="link-arrow">-> yvela shetavazeba</a>
         </div>
         <button class="slide-button left" id="slide-left">&lt;</button>
         <div class="offers-slider" id="offers-slider">
@@ -246,11 +279,14 @@
           <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
         </a>
         <div class="lang">
-          <div class="lang-div">
+          <div class="lang-div" id="lang-toggle">
             <div class="contact-icon">
               <img class="globe-icon" src="images/globe-solid.svg" alt="lang" />
             </div>
-            <div class="lang-text">ქარ</div>
+            <div class="lang-text" id="lang-text">ქარ</div>
+          </div>
+          <div class="dropdown-lang" id="dropdown-lang">
+            <div class="lang-item">Eng</div>
           </div>
         </div>
       </div>
