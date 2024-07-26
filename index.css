@@ -131,7 +131,7 @@ table {
 body {
   color: #555f62;
   background-color: #f9fafa;
-  font-family: TBCX, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -167,6 +167,8 @@ body {
   height: 100%;
   align-items: center;
   margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -184,7 +186,7 @@ body {
   width: 0;
   height: 2px;
   background-color: #182cc0;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.6s ease, left 0.6s ease;
 }
 
 .nav-list.active::before {
@@ -200,7 +202,7 @@ body {
   top: 60px;
   left: -20px;
   right: 0;
-  width: 100%;
+  width: 102%;
   z-index: 102;
   flex-direction: column;
   align-items: center;
@@ -235,10 +237,10 @@ body {
   top: 80px;
   left: 0;
   right: 0;
-  height: 190px;
+  height: 250px;
   background-color: #fff;
   z-index: 100;
-  transition: height 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
   opacity: 0;
   pointer-events: none;
   display: flex;
@@ -247,7 +249,7 @@ body {
 }
 
 .background-div img {
-  height: 100%; 
+  height: 100%;
   width: auto;
 }
 .nav-list.active ~ .background-div {
@@ -262,11 +264,22 @@ body {
   padding-right: 47px;
 }
 
-.concept-banner {
+.concept-banner,
+.subscribe-text p,
+.select-set,
+.numbers-div,
+.offers-section,
+.bank-div,
+.footer-title,
+.footer-body,
+.footer-bottom {
   width: 100%;
   max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.concept-banner {
   color: #fff;
   background-color: #000;
   border-radius: 6px;
@@ -332,6 +345,7 @@ body {
   display: flex;
   position: relative;
   cursor: pointer;
+  background-color: #001682;
 }
 
 .subscribe-btn:hover {
@@ -343,33 +357,26 @@ body {
   transition: background-color 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
-.subscribe-text {
+.subscribe-text,
+.mobile-bank,
+.select-set,
+.numbers,
+.offers-section {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 47px;
   padding-right: 47px;
+}
+
+.mobile-bank {
+  background-color: #fff;
 }
 
 .subscribe-text p {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
   color: #141719;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
-}
-
-.select-set {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 47px;
-  padding-right: 47px;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .select-title {
@@ -443,20 +450,9 @@ body {
   grid-row: span 2;
 }
 
-.numbers {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 47px;
-  padding-right: 47px;
-}
-
 .numbers-div {
   grid-column-gap: 30px;
   display: flex;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .numbers_item {
@@ -480,15 +476,7 @@ body {
 }
 
 .offers-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 47px;
-  padding-right: 47px;
   position: relative;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
   margin: auto;
   overflow: hidden;
 }
@@ -500,17 +488,7 @@ body {
   display: flex;
 }
 
-.mobile-bank {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 47px;
-  padding-right: 47px;
-}
 .bank-div {
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
   min-height: 374px;
   justify-content: flex-start;
   align-items: center;
@@ -626,8 +604,29 @@ body {
   display: flex;
 }
 
+.card-arrow {
+  grid-column-gap: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  flex: none;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+  display: flex;
+  text-decoration: underline;
+}
+
+.hover-gray:hover {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
 .footer {
   padding-top: 60px;
+  background-color: #fff;
 }
 
 .footer a {
@@ -636,34 +635,19 @@ body {
 }
 
 .footer-title {
-  background-color: #fff;
   padding-top: 45px;
   padding-bottom: 50px;
   padding-left: 47px;
   padding-right: 47px;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
 
-.footer-logo {
-  width: 165px;
-  color: #141719;
-}
-
 .footer-body {
-  background-color: #fff;
   padding-bottom: 45px;
   padding-left: 47px;
   padding-right: 47px;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-table {
@@ -675,17 +659,22 @@ body {
   display: grid;
 }
 
-.col-title {
+.col-title,
+.contact-title {
   color: #141719;
   padding-bottom: 24px;
   font-weight: 700;
 }
 
 .col-list {
+  display: none; /* Hide by default */
   grid-row-gap: 20px;
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+}
+.col-list.open {
+  display: flex; /* Show when open */
 }
 
 .contact-info {
@@ -736,10 +725,6 @@ body {
   font-size: 12px;
   padding-left: 47px;
   padding-right: 47px;
-  width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bottom-content {
@@ -851,4 +836,205 @@ body {
 
 .logo {
   display: flex;
+}
+
+.mobile-btn {
+  grid-column-gap: 4px;
+  color: #182cc0;
+  text-transform: uppercase;
+  border: 1px solid #182cc0;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-decoration: none;
+  transition: background-position 0.25s ease-in-out;
+  display: none;
+}
+
+.mobile-btn:hover {
+  background-color: #f9fafa;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .numbers,
+  .subscribe-text,
+  .mobile-bank {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .numbers-div {
+    flex-direction: column;
+  }
+
+  .tbc-concept,
+  .subscribe-text,
+  .mobile-bank {
+    padding-bottom: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .concept-content {
+    padding: 240px 45px 36px;
+  }
+
+  .bank-div {
+    min-height: 300px;
+  }
+
+  .mobile-btn {
+    display: flex;
+  }
+
+  .app-btn {
+    display: none;
+  }
+  .card-long {
+    margin-right: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .numbers,
+  .subscribe-text,
+  .mobile-bank {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .tbc-concept {
+    padding-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .concept-banner {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .concept-text {
+    max-width: 100%;
+    align-items: stretch;
+  }
+
+  .concept-picture {
+    border-radius: 0;
+  }
+
+  .subscribe-text p {
+    font-size: 28px;
+  }
+
+  .bank-div {
+    min-height: 0;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .bank-content {
+    width: 100%;
+    grid-row-gap: 28px;
+    align-items: stretch;
+  }
+
+  .mobile-btn {
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .mobile-logo {
+    width: 24px;
+    display: flex;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .footer-body {
+    padding-bottom: 0;
+  }
+
+  .footer-table {
+    grid-row-gap: 0;
+    flex-direction: column;
+    /* margin-left: -45px;
+    margin-right: -45px; */
+    display: flex;
+  }
+  .col-title {
+    cursor: pointer;
+  }
+  .col-title div {
+    border-bottom: 1px solid #d1d5d6;
+  }
+  .col-list {
+    display: none;
+    border-bottom: 1px solid #d1d5d6;
+    margin-bottom: 24px;
+  }
+  .col-list.open {
+    display: flex;
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .bank-img {
+    position: relative;
+    align-self: baseline;
+  }
+}
+@media screen and (max-width: 479px) {
+  h2 {
+    font-size: 14px;
+  }
+
+  .numbers,
+  .subscribe-text,
+  .mobile-bank {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .tbc-concept,
+  .subscribe-text,
+  .mobile-bank {
+    padding-bottom: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .concept-content {
+    padding: 172px 15px 20px;
+  }
+
+  .subscribe-text p {
+    font-size: 24px;
+  }
+
+  .bank-content {
+    grid-row-gap: 24px;
+  }
+
+  /* .footer-table {
+    margin-left: -15px;
+    margin-right: -15px;
+  } */
 }

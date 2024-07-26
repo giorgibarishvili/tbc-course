@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const langText = document.getElementById("lang-text");
   const dropdownContent = document.getElementById("dropdown-lang");
 
-  langToggle.addEventListener("click", () => {
+  dropdownContent.addEventListener("click", () => {
     if (langText.textContent === "ქარ") {
       langText.textContent = "Eng";
       dropdownContent.innerHTML = '<div class="lang-item">ქარ</div>';
@@ -122,5 +122,27 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       backgroundDiv.style.opacity = "0";
     }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const colTitles = document.querySelectorAll(".footer-table .col-title");
+
+  colTitles.forEach((colTitle) => {
+    colTitle.addEventListener("click", () => {
+      // Only toggle .col-list if it's not in the contact section
+      if (!colTitle.closest(".contact")) {
+        const colList = colTitle.nextElementSibling;
+
+        // Toggle 'open' class on the colList
+        colList.classList.toggle("open");
+
+        // Optional: Close other open colLists
+        colTitles.forEach((title) => {
+          if (title !== colTitle && !title.closest(".contact")) {
+            title.nextElementSibling.classList.remove("open");
+          }
+        });
+      }
+    });
   });
 });
