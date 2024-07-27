@@ -131,10 +131,11 @@ table {
 body {
   color: #555f62;
   background-color: #f9fafa;
-  font-family: sans-serif;
+  font-family: "Noto Sans Georgian", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
+  font-style: normal;
 }
 
 .header {
