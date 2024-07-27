@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const sliders = document.querySelectorAll(".section_offers-swiper");
 
   sliders.forEach((slider, index) => {
-    console.log(`Initializing slider ${index + 1}`);
     const swiper = slider.querySelector(".swiper");
     const slides = slider.querySelectorAll(".swiper-slide");
     const leftArrow = slider.querySelector(".left-arrow");
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
       !rightArrow ||
       !scrollbarDrag
     ) {
-      console.log(`Missing elements in slider ${index + 1}`);
       return;
     }
 
