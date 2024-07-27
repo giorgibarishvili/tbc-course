@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" />
     <link rel="stylesheet" href="index.css" />
     <title>TBC Concept</title>
   </head>
@@ -27,6 +28,11 @@
           </a>
         </div>
         <a href="#">
+          <img
+            class="mobile-logo"
+            src="images/mobile-logo.svg"
+            alt="TBC Concept"
+          />
           <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
         </a>
         <nav class="nav">
@@ -68,7 +74,12 @@
             />
             გამოიწერეთ ნაკრები
           </a>
-          <div class="lang">
+          <div class="burger-menu">
+            <div class="burger-line-1"></div>
+            <div class="burger-line-2"></div>
+            <div class="burger-line-3"></div>
+          </div>
+          <div class="lang top-lang">
             <div class="lang-div" id="lang-toggle">
               <div class="contact-icon">
                 <img
@@ -81,6 +92,129 @@
             </div>
             <div class="dropdown-lang" id="dropdown-lang">
               <div class="lang-item">Eng</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav">
+          <div class="mobile-inner">
+            <div class="mobile-main">
+              <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle">
+                  <div>პროდუქტები</div>
+                  <div class="dropdown-line"></div>
+                  <div class="dropdown-arrow">
+                    <img src="images/dropdown-arrow.svg" alt="drop arrow" />
+                  </div>
+                </div>
+                <div class="dropdown-list">
+                  <div class="dropdown-list-inner">
+                    <a class="dropdown-link" href="#">პროდუქტების მიმოხილვა</a>
+                    <a class="dropdown-link" href="#">ნაკრები</a>
+                    <a class="dropdown-link" href="#">პირადი ბანკირი</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle">
+                  <div>შეთავაზებები</div>
+                  <div class="dropdown-line"></div>
+                  <div class="dropdown-arrow">
+                    <img src="images/dropdown-arrow.svg" alt="drop arrow" />
+                  </div>
+                </div>
+                <div class="dropdown-list">
+                  <div class="dropdown-list-inner">
+                    <a class="dropdown-link" href="#">მიმოხილვა</a>
+                    <a class="dropdown-link" href="#">შეთავაზებები</a>
+                    <a class="dropdown-link" href="#">ღონისძიებები</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle">
+                  <div>კონცეპტის სივრცე</div>
+                  <div class="dropdown-line"></div>
+                  <div class="dropdown-arrow">
+                    <img src="images/dropdown-arrow.svg" alt="drop arrow" />
+                  </div>
+                </div>
+                <div class="dropdown-list">
+                  <div class="dropdown-list-inner">
+                    <a class="dropdown-link" href="#">მიმოხილვა</a>
+                    <a class="dropdown-link" href="#">კაფე</a>
+                    <a class="dropdown-link" href="#">ბიბლიოთეკა</a>
+                    <a class="dropdown-link" href="#">კონცეპტ ფილიალი</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-contact">
+              <div class="footer-body">
+                <div class="footer-table">
+                  <div class="footer-col contact">
+                    <div class="column">
+                      <div class="contact-title">
+                        <div>დაგვიკავშირდით:</div>
+                      </div>
+                      <address class="contact-info">
+                        <a class="hover-underline" href="#">
+                          <div class="contact-icon">
+                            <img
+                              src="images/mobile-icon.svg"
+                              alt="mobile icon"
+                            />
+                          </div>
+                          <p>+995 32 2 27 27 00</p>
+                        </a>
+                        <a class="hover-underline" href="#">
+                          <div class="contact-icon">
+                            <img src="images/email-icon.svg" alt="email icon" />
+                          </div>
+                          <p>info@tbcconcept.ge</p>
+                        </a>
+                        <a class="hover-underline" href="#">
+                          <div class="contact-icon">
+                            <img
+                              src="images/location-icon.svg"
+                              alt="location icon"
+                            />
+                          </div>
+                          <p>ფილიალები</p>
+                        </a>
+                      </address>
+                      <p class="col-title">სოციალური ქსელები</p>
+                      <div class="social-icons">
+                        <a class="hover-blue" href="#">
+                          <div class="contact-icon">
+                            <img src="images/fb-icon.svg" alt="facebook" />
+                          </div>
+                        </a>
+                        <a class="hover-blue" href="#">
+                          <div class="contact-icon">
+                            <img src="images/insta-icon.svg" alt="instagram" />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="bottom-content">
+                  <div class="rights">
+                    <div class="rights-logo">png</div>
+                    <p>2024 ყველა უფლება დაცულია</p>
+                  </div>
+                  <div class="footer-links">
+                    <span class="hover-blue" style="cursor: pointer"
+                      >კონფიდენციალურობა</span
+                    >
+                    <span class="hover-blue" style="cursor: pointer"
+                      >წესები და პირობები</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -312,11 +446,15 @@
     </div>
     <footer class="footer">
       <div class="footer-title">
-        <a href="#">
-          <img class="mobile-logo" src="images/mobile-logo.svg" alt="TBC Concept" />
+        <a class="footer-logo" href="#">
+          <img
+            class="mobile-logo"
+            src="images/mobile-logo.svg"
+            alt="TBC Concept"
+          />
           <img class="logo" src="images/tbc-concept.svg" alt="TBC Concept" />
         </a>
-        <div class="lang">
+        <div class="lang footer-lang">
           <div class="lang-div" id="lang-toggle">
             <div class="contact-icon">
               <img class="globe-icon" src="images/globe-solid.svg" alt="lang" />
@@ -370,25 +508,35 @@
               </div>
               <address class="contact-info">
                 <a class="hover-underline" href="#">
-                  <div class="contact-icon">png</div>
+                  <div class="contact-icon">
+                    <img src="images/mobile-icon.svg" alt="mobile" />
+                  </div>
                   <p>+995 32 2 27 27 00</p>
                 </a>
                 <a class="hover-underline" href="#">
-                  <div class="contact-icon">png</div>
+                  <div class="contact-icon">
+                    <img src="images/email-icon.svg" alt="email" />
+                  </div>
                   <p>info@tbcconcept.ge</p>
                 </a>
                 <a class="hover-underline" href="#">
-                  <div class="contact-icon">png</div>
+                  <div class="contact-icon">
+                    <img src="images/location-icon.svg" alt="location" />
+                  </div>
                   <p>ფილიალები</p>
                 </a>
               </address>
               <p class="col-title">სოციალური ქსელები</p>
               <div class="social-icons">
                 <a class="hover-blue" href="#">
-                  <div class="contact-icon">fb</div>
+                  <div class="contact-icon">
+                    <img src="images/fb-icon.svg" alt="facebook" />
+                  </div>
                 </a>
                 <a class="hover-blue" href="#">
-                  <div class="contact-icon">inst</div>
+                  <div class="contact-icon">
+                    <img src="images/insta-icon.svg" alt="instagram" />
+                  </div>
                 </a>
               </div>
             </div>
@@ -398,7 +546,9 @@
       <div class="footer-bottom">
         <div class="bottom-content">
           <div class="rights">
-            <div class="rights-logo">png</div>
+            <div class="rights-logo">
+              <img src="images/mobile-logo.svg" alt="tbc" />
+            </div>
             <p>2024 ყველა უფლება დაცულია</p>
           </div>
           <div class="footer-links">

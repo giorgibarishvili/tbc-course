@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }</div>`;
   });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const navLists = document.querySelectorAll(".nav-list");
   const backgroundDiv = document.querySelector(".background-div");
@@ -101,12 +102,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const isActive = navList.classList.contains("active");
       navLists.forEach((item) => {
         item.classList.remove("active");
-        item.querySelector(".dropdown-content").style.display = "none";
+        const dropdownContent = item.querySelector(".dropdown-content");
+        dropdownContent.style.opacity = "0";
       });
 
       if (!isActive) {
         navList.classList.add("active");
-        navList.querySelector(".dropdown-content").style.display = "block";
+        const dropdownContent = navList.querySelector(".dropdown-content");
+        dropdownContent.style.display = "block";
+        setTimeout(() => {
+          dropdownContent.style.opacity = "1";
+        }, 10);
         backgroundDiv.style.opacity = "1";
       } else {
         backgroundDiv.style.opacity = "0";
@@ -118,31 +124,65 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!e.target.closest(".nav")) {
       navLists.forEach((item) => {
         item.classList.remove("active");
-        item.querySelector(".dropdown-content").style.display = "none";
+        const dropdownContent = item.querySelector(".dropdown-content");
+        dropdownContent.style.opacity = "0";
+        setTimeout(() => {
+          dropdownContent.style.display = "none";
+        }, 600);
       });
       backgroundDiv.style.opacity = "0";
     }
   });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const colTitles = document.querySelectorAll(".footer-table .col-title");
 
   colTitles.forEach((colTitle) => {
     colTitle.addEventListener("click", () => {
-      // Only toggle .col-list if it's not in the contact section
       if (!colTitle.closest(".contact")) {
         const colList = colTitle.nextElementSibling;
 
-        // Toggle 'open' class on the colList
         colList.classList.toggle("open");
 
-        // Optional: Close other open colLists
         colTitles.forEach((title) => {
           if (title !== colTitle && !title.closest(".contact")) {
             title.nextElementSibling.classList.remove("open");
           }
         });
       }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerMenu = document.querySelector(".burger-menu");
+  const mobileNav = document.querySelector(".mobile-nav");
+  const mobileDropdownToggles = document.querySelectorAll(
+    ".mobile-dropdown-toggle"
+  );
+
+  burgerMenu.addEventListener("click", () => {
+    burgerMenu.classList.toggle("active");
+    mobileNav.classList.toggle("active");
+  });
+
+  mobileDropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      mobileDropdownToggles.forEach((otherToggle) => {
+        if (otherToggle !== toggle) {
+          otherToggle.nextElementSibling.classList.remove("active");
+          otherToggle
+            .querySelector(".dropdown-arrow")
+            .classList.remove("rotate");
+        }
+      });
+
+      const dropdownList = toggle.nextElementSibling;
+      const dropdownArrow = toggle.querySelector(".dropdown-arrow");
+
+      dropdownList.classList.toggle("active");
+      dropdownArrow.classList.toggle("rotate");
     });
   });
 });
